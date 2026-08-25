@@ -8,6 +8,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -22,7 +23,9 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.semantics.testTagsAsResourceId
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import mozilla.components.compose.base.modifier.thenConditional
 import org.mozilla.fenix.R
 import org.mozilla.fenix.home.ui.HomepageTestTag.HOMEPAGE_WORDMARK_LOGO
@@ -70,15 +73,15 @@ internal fun WordmarkLogo(
 
 @Composable
 internal fun WordmarkText(color: Color?) {
-    Image(
+    Text(
+        text = stringResource(R.string.firefox),
         modifier = Modifier
             .semantics {
                 testTagsAsResourceId = true
                 testTag = HOMEPAGE_WORDMARK_TEXT
-            }
-            .height(dimensionResource(R.dimen.wordmark_text_height)),
-        painter = painterResource(getAttr(R.attr.fenixWordmarkText)),
-        colorFilter = color?.let { ColorFilter.tint(it) },
-        contentDescription = stringResource(R.string.app_name),
+            },
+        color = color ?: Color(0xFF15141A),
+        fontSize = 20.sp,
+        fontWeight = FontWeight.Normal,
     )
 }
