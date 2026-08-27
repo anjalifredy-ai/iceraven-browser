@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+    <ShortName>RikkY Search</ShortName>
+    <Description>Search with RikkY Search</Description>
+    <LongName>RikkY Search</LongName>
+    <Image width="32" height="32">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABWElEQVR4nO2VoUsEQRTGfyvKKQzYLp5gMYpNNAhPDIdBuwiC1WDRMliUSWoQtFn8A8yCYYoo5gPBIAZtesGTuXAiaDEs467s4s4Ksl/8vnlvfsyb2YVKlSr9saK0QIw7BlZ/qO0BHeAOuAROrFY3eQH68hbEVAPqwBSwAbTEuO0yAZJ6bYlxyyEBmlarCBgExoHzhDXrIQEAsFr1rFYtYAl48+IJMa4/KEAMpA08eHYEqFIAYhvG1bVavZQCIMbVgYZnX+TpkXlW3sY1YAzYBwZi0TuwExLgTIxLyzrAitXqKiRAmu6BeavVbd7Coj5Eo8C1GDcbGqD5VdMAdr1sGDgV40byNMw9AqvVB/AIbIpxQ8CaB3EALGbt99sRaKDteQti3GQpAFarV2AvIcr8VyziEh4Cz543J8ZNlwJgtery/UJCxlMo6hkeAU+eJ2LcTEH9K1X6x/oEVz5PDhj86c4AAAAASUVORK5CYII=</Image>
+    <Url type="text/html" method="get" template="https://rikky.vercel.app/?q={searchTerms}"/>
+</SearchPlugin>
